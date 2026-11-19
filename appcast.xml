@@ -3,6 +3,18 @@
     <channel>
         <title>Peekaboo</title>
         <item>
+            <title>1.0.2</title>
+            <pubDate>Fri, 20 Nov 2026 04:45:14 +0500</pubDate>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/orcamedia/peekaboo-releases/releases/download/updates/Peekaboo-1.0.2.dmg" length="21386463" type="application/octet-stream" sparkle:edSignature="Z6oM04M1kLvHX+SW5Jr3ve8oHO3wZp9M/BGyI9XgAOdwk9HXt+iL4GUt9B35xYQS2adOCnT/CIxJmgKxJAvlAQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/orcamedia/peekaboo-releases/releases/download/updates/Peekaboo3-2.delta" sparkle:deltaFrom="2" length="1038382" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="T7S0x4GZDvj1+2Tn7To0I1YsTbxsXT5YN+ce4WUt0LkEwOjQdK5zpC2N3S13HUBoggtTos2ZYOkswG4+y79jBw=="/>
+                <enclosure url="https://github.com/orcamedia/peekaboo-releases/releases/download/updates/Peekaboo3-1.delta" sparkle:deltaFrom="1" length="1038610" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="zQeHeoXqdK85Ylg2FyV+eRmHPJn7vWDL84sApR6GBSlKl5JPvOwjAe0Rmxk2We57yyMWncNSkzrHBnydpkuDDw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.0.1</title>
             <pubDate>Fri, 20 Nov 2026 04:10:52 +0500</pubDate>
             <sparkle:version>2</sparkle:version>
