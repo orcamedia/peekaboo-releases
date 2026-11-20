@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peekaboo Support</title>
+<meta name="description" content="Help with Peekaboo, the Quick Look app that previews 3D models, game art, code, notebooks and music in Finder.">
+<link rel="icon" href="../docs/icon.png">
+<style>
+  :root {
+    --bg: #f6f5f1; --card: #ffffff; --ink: #1d2327; --muted: #5d666c; --line: #e2dfd6; --accent: #2f6fb1; --key: #eceae3;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16191c; --card: #1f2327; --ink: #eceff1; --muted: #a3acb2; --line: #30363b; --accent: #7fb2e8; --key: #2b3035; color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px max(20px, env(safe-area-inset-left)) 64px; }
+  header { text-align: center; margin-bottom: 40px; }
+  header img { width: 96px; height: 96px; }
+  h1 { font-size: 2rem; margin: 12px 0 4px; letter-spacing: -0.01em; }
+  .lede { color: var(--muted); margin: 0; }
+  h2 { font-size: 1.25rem; margin: 40px 0 12px; }
+  h3 { font-size: 1rem; margin: 0 0 6px; }
+  p, li { margin: 0 0 10px; }
+  a { color: var(--accent); }
+  kbd { background: var(--key); border: 1px solid var(--line); border-radius: 5px; padding: 1px 6px; font: 0.85em ui-monospace, Menlo, monospace; }
+  code { background: var(--key); border-radius: 4px; padding: 1px 5px; font: 0.88em ui-monospace, Menlo, monospace; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; margin-bottom: 12px; }
+  ol { padding-left: 22px; }
+  .contact { text-align: center; }
+  .button { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; padding: 10px 20px; border-radius: 10px; font-weight: 600; margin: 6px 0 10px; }
+  @media (prefers-color-scheme: dark) { .button { color: #10161c; } }
+  table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  .table-wrap { overflow-x: auto; }
+  footer { color: var(--muted); font-size: 0.9rem; text-align: center; margin-top: 48px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="../docs/icon.png" alt="Peekaboo icon">
+    <h1>Peekaboo Support</h1>
+    <p class="lede">Help with previewing 3D models, game art, code, notebooks and music in Finder.</p>
+  </header>
+
+  <h2>Getting started</h2>
+  <div class="card">
+    <ol>
+      <li>Open Peekaboo once after installing it. This tells macOS about its previews. You can quit it afterwards; the previews keep working.</li>
+      <li>In Finder, select a file and press <kbd>Space</kbd>.</li>
+      <li>Switch a Finder window to icon view to see thumbnails of models, sprites, maps and paintings.</li>
+    </ol>
+    <p>Peekaboo needs macOS 14 Sonoma or later.</p>
+  </div>
+
+  <h2>If a preview doesn't appear</h2>
+  <div class="card">
+    <h3>Reset Quick Look</h3>
+    <p>Open Peekaboo and click <b>Reset Quick Look</b>. This clears macOS's preview cache, which can hold on to an older preview. Then try the file again.</p>
+  </div>
+  <div class="card">
+    <h3>Check that the extensions are on</h3>
+    <p>Open <b>System Settings → General → Login Items &amp; Extensions</b>, find <b>Quick Look</b>, and make sure the Peekaboo extensions are switched on.</p>
+  </div>
+  <div class="card">
+    <h3>Check the file type is switched on</h3>
+    <p>Open Peekaboo and make sure the file type is ticked. Switching a type off hands it back to macOS's own preview.</p>
+  </div>
+  <div class="card">
+    <h3>Thumbnails still show the old icon</h3>
+    <p>Finder caches thumbnails. Click <b>Reset Quick Look</b>, then close and reopen the Finder window. Very large files show a plain icon on purpose, so Finder stays quick.</p>
+  </div>
+  <div class="card">
+    <h3>"Too large to preview"</h3>
+    <p>Peekaboo stops at a size limit for each file type (for example 500 MB for 3D models), so a huge file never freezes Finder. The file itself is fine.</p>
+  </div>
+  <div class="card">
+    <h3>Music doesn't play</h3>
+    <p>MIDI and tracker songs play in Quick Look's own player: press its play button. They stop when you move to another file. SoundFonts stay silent until you play the on-screen keyboard (click the keys or type <kbd>A</kbd>–<kbd>K</kbd>).</p>
+  </div>
+  <div class="card">
+    <h3>Markdown images are missing</h3>
+    <p>Images stored next to the Markdown file show straight away. Images linked from the web need an internet connection.</p>
+  </div>
+
+  <h2>What Peekaboo previews</h2>
+  <div class="card table-wrap">
+    <table>
+      <tr><th>Files</th><th>Press Space to see</th></tr>
+      <tr><td>glTF and GLB <code>.glb</code> <code>.gltf</code></td><td>The model: drag to orbit, scroll to zoom; animations play</td></tr>
+      <tr><td>Blender <code>.blend</code></td><td>The preview image Blender saved in the file</td></tr>
+      <tr><td>Lottie <code>.lottie</code></td><td>The animation, looping</td></tr>
+      <tr><td>Aseprite <code>.aseprite</code> <code>.ase</code></td><td>The sprite, animated, with crisp pixels</td></tr>
+      <tr><td>Adobe Swatch Exchange <code>.ase</code></td><td>The colours, with names and hex values</td></tr>
+      <tr><td>Tiled maps <code>.tmx</code> <code>.tmj</code></td><td>The map, zoomable</td></tr>
+      <tr><td>Krita and Procreate <code>.kra</code> <code>.procreate</code></td><td>The artwork, with canvas size and layer count</td></tr>
+      <tr><td>Markdown <code>.md</code></td><td>Formatted text with tables, math and Mermaid diagrams</td></tr>
+      <tr><td>Source code, about 60 languages</td><td>Syntax highlighting and line numbers</td></tr>
+      <tr><td>Jupyter notebooks <code>.ipynb</code></td><td>Cells with their outputs, charts and math</td></tr>
+      <tr><td>MIDI <code>.mid</code> <code>.midi</code> <code>.kar</code></td><td>The song, playing, with a piano roll</td></tr>
+      <tr><td>Tracker music <code>.mod</code> <code>.xm</code> <code>.it</code> <code>.s3m</code></td><td>The song, playing, with its opening pattern</td></tr>
+      <tr><td>SoundFonts <code>.sf2</code></td><td>The presets, playable on a keyboard</td></tr>
+    </table>
+  </div>
+
+  <h2>Privacy</h2>
+  <div class="card">
+    <p>Everything happens on your Mac. Peekaboo has no accounts, collects no data, and your files never leave your Mac. Read the full <a href="https://github.com/orcamedia/peekaboo-releases/blob/main/PRIVACY.md">privacy policy</a>.</p>
+  </div>
+
+  <h2>Still stuck?</h2>
+  <div class="card contact">
+    <p>Tell us what happened, which file type it was, and your macOS version. A sample file helps a lot, if you can share it.</p>
+    <a class="button" href="https://github.com/orcamedia/peekaboo-releases/issues/new">Report a problem</a>
+    <p><a href="https://github.com/orcamedia/peekaboo-releases/issues">See known issues</a></p>
+  </div>
+
+  <footer>© 2026 ORCA MEDIA GROUP</footer>
+</main>
+</body>
+</html>
